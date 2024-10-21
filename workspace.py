@@ -8,7 +8,7 @@ def number_guessing_game():
     secret_number = random.randint(1, 100)
     attempts = 0
 
-    # Infinite loop
+    # Infinite loop until player guesses the right number
     while True:
         # Get the player's guess
         try:
@@ -26,4 +26,15 @@ def number_guessing_game():
         except ValueError:
             print("Invalid input. Please enter a valid number.")
 
-number_guessing_game()
+print("Choose a game")
+print("1. Guessing Game")
+print("2. Soon")
+
+choice = int(input("Input a number of the game you want to play: "))
+
+if choice == 1:
+    number_guessing_game()
+elif choice == 2:
+    print("Being Worked on")
+else:
+    print("Invalid number input")

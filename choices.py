@@ -13,5 +13,5 @@ elif choice == 3:
     print("You chose number 3")
 
 else: 
-    print("Invelid number inputed")
+    print("Invalid number inputed")
     

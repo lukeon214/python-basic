@@ -9,5 +9,5 @@ while guess != secret_number:
         print("Too low!")
     elif guess > secret_number:
         print("Too high!")
-
-print("Congrats! You guessed the number.")
+    else:
+        print(f"Congrats! You guessed the right number {secret_number}")
