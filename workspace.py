@@ -26,15 +26,47 @@ def number_guessing_game():
         except ValueError:
             print("Invalid input. Please enter a valid number.")
 
-print("Choose a game")
-print("1. Guessing Game")
-print("2. Soon")
+def calculator_basic():
+    num1 = int(input("Enter your fist number: "))
+    num2 = int(input("Enter your second number: "))
 
-choice = int(input("Input a number of the game you want to play: "))
+    print("Choose a operation")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiply")
+    print("4. Devide")
+
+    choice2 = int(input("Type a number of the operation you want to proced "))
+
+    if choice2 == 1:
+        result = num1 + num2
+        print(result)
+    elif choice2 == 2:
+        result = num1 - num2
+        print(result)
+    elif choice2 == 3:
+        result = num1 * num2
+        print(result)
+    elif choice2 == 4:
+        if num2 == 0:
+            print("Cant devide by zero!")
+        else:
+            result = num1 / num2
+            print(result)
+    else:
+        print("Invalid input")
+
+
+print("Choose a program")
+print("1. Guessing Game")
+print("2. Calculator")
+
+choice = int(input("Input a number of the program you want to run: "))
 
 if choice == 1:
     number_guessing_game()
 elif choice == 2:
-    print("Being Worked on")
+    calculator_basic()
+
 else:
-    print("Invalid number input")
+    print("Invalid input")
