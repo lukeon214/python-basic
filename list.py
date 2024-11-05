@@ -13,6 +13,6 @@ if choice == 1:
 elif choice == 2:
     print(", ".join(list2))
 elif choice == 3:
-    print((", ".join(list3)))
+    print(", ".join(list3))
 else:
     print("Invalid input!")
